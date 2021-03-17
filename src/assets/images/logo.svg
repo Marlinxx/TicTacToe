@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="272" height="209" viewBox="0 0 272 209">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M38.72 82.21A117.75 117.75 0 0 0 23 130.12M105.62 29.08A118 118 0 0 0 74.57 44M214.82 49.6a118.1 118.1 0 0 0-44.37-22.15M259.19 134.87a117.87 117.87 0 0 0-9-38.51"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M260 167.43l-.07-23.72h1a1.06 1.06 0 0 0 0-2.06h-18a1.06 1.06 0 0 0 0 2.07h.72l.07 23.72a19.58 19.58 0 0 0 8.29 37.36 19.59 19.59 0 0 0 8-37.41l-.01.04z"/>
+        <path fill="#F1F1F1" fill-rule="nonzero" d="M269.75 185.22a17.74 17.74 0 0 1-12.12 17 18 18 0 0 1-23.74-17 17.93 17.93 0 0 1 10.83-16.52l.52-.22-.07-24.43h13.06l.07 24.43.51.22a18 18 0 0 1 10.94 16.52z"/>
+        <path fill="#08D1FF" fill-rule="nonzero" d="M269.75 185.16v.05a17.93 17.93 0 1 1-35.86.1v-.05l35.86-.1z"/>
+        <path fill="#D2D8D8" fill-rule="nonzero" d="M269.75 185.16a17.91 17.91 0 0 0-10.94-16.41l-.51-.22-.07-24.43h-4.69v28.32c7.59 2.407 12.056 10.243 10.26 18a5.9 5.9 0 0 0 4.62 1.53 17.82 17.82 0 0 0 1.32-6.79h.01z"/>
+        <path fill="#008FC1" fill-rule="nonzero" d="M269.75 185.16h-5.66a15.27 15.27 0 0 1-19 16.71 17.9 17.9 0 0 0 24.62-16.67l.04-.04z"/>
+        <circle cx="252.916" cy="172.032" r="2.09" fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-.17 252.916 172.032)"/>
+        <circle cx="259.536" cy="178.542" r="2.91" fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-.17 259.536 178.542)"/>
+        <circle cx="245.664" cy="181.253" r="2.09" fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-.17 245.664 181.253)"/>
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M247.28 207.72c-10.68-2.164-18.358-11.552-18.36-22.45M251.82 208.17a22.88 22.88 0 0 1-2.15-.1"/>
+        <path fill="#BCBCBC" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M243.52 143.76h16.37"/>
+        <path fill="#FFC200" fill-rule="nonzero" d="M227.83 67l-5.64-19.29 5.51-.5L226.31 32l5.91 20.19-5.14.47s.79 14.71.75 14.34z"/>
+        <path fill="#FF551A" fill-rule="nonzero" d="M237.41 58.28l5.79 18.37a8.93 8.93 0 0 1-5.82 11.17A8.93 8.93 0 0 1 226.21 82l-5.79-18.37-5.42 1.72 6 19.18c2.445 7.676 10.629 11.938 18.32 9.54 7.676-2.445 11.938-10.629 9.54-18.32l-6-19.18-5.45 1.71z"/>
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M239.92 95.88c-8.695 2.73-17.958-2.092-20.71-10.78l-6-19.18a1.91 1.91 0 0 1 1.25-2.39l5.44-1.71a1.91 1.91 0 0 1 2.39 1.25L228 81.44a7 7 0 1 0 13.35-4.21l-5.75-18.38a1.91 1.91 0 0 1 1.25-2.39l5.44-1.71a1.91 1.91 0 0 1 2.38 1.25l6 19.18c2.726 8.683-2.08 17.936-10.75 20.7z"/>
+        <path fill="#F1F1F1" fill-rule="nonzero" d="M237.412 58.272l5.436-1.713 1.818 5.77-5.436 1.714zM214.99 65.334l5.437-1.713 1.818 5.77-5.436 1.714z"/>
+        <path stroke="#333" stroke-linecap="round" d="M233.57 100.88A19.59 19.59 0 0 1 216 87.34M240.67 100a19.67 19.67 0 0 1-3.88.83"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M33.74 61.96l25.65 18.17M27.69 73.78L15.8 81.04M49.18 89.93l-3.08 12.09M53.54 87.36l8-30.7a3.56 3.56 0 0 0-1.11-3.57 3.57 3.57 0 0 0-5.45-2L28.66 68.82a3.576 3.576 0 1 0 4 5.93L53 61.07l-6.35 24.5a3.57 3.57 0 1 0 6.91 1.79h-.02z"/>
+        <rect width="3.53" height="30.45" x="51.74" y="58.123" fill="#D2D8D8" fill-rule="nonzero" rx="1.69" transform="rotate(-165.67 53.505 73.348)"/>
+        <rect width="3.53" height="30.45" x="40.178" y="48.991" fill="#D2D8D8" fill-rule="nonzero" rx="1.69" transform="rotate(56.29 41.943 64.216)"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M66.124 40.146l2.751 2.082-6.475 8.556-2.751-2.082z"/>
+        <circle cx="58.266" cy="53.392" r="6.29" fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-54.7 58.266 53.392)"/>
+        <circle cx="58.266" cy="53.392" r="4.47" fill="#FF551A" fill-rule="nonzero" transform="rotate(-54.7 58.266 53.392)"/>
+        <circle cx="58.266" cy="53.392" r="1.89" fill="#FFF" fill-rule="nonzero" transform="rotate(-54.7 58.266 53.392)"/>
+        <path stroke="#333" stroke-linecap="round" d="M50.64 47.54a9.65 9.65 0 0 1 8.8-3.77M48.92 51.22a9.58 9.58 0 0 1 .44-1.43"/>
+        <path fill="#96DD58" fill-rule="nonzero" d="M27.65 148.7c.12 2.31 1.69 5.84 6.27 8 5.77 2.71 11.78 4.08 13.28 12.33s-2.79 16.1-10.85 17.59C28.29 188.11 21 185.13 14.93 176c-6.07-9.13-8.72-20.86-6.27-29 2.45-8.14 7-9.5 11-9.44 4 .06 7.58 3.25 7.99 11.14z"/>
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M23.8 187.91c-4.173-1.94-7.913-5.383-11.22-10.33C6 167.66 3.3 155 6 146.14c2.34-7.81 6.85-11.56 13.78-11.45 2.35 0 10.06 1.15 10.73 13.86.09 1.61 1.36 4 4.66 5.59.79.36 1.58.72 2.37 1.06 5.08 2.23 10.88 4.8 12.46 13.33 1.85 10.17-3.79 19.15-13.11 20.87a21.1 21.1 0 0 1-13.09-1.49z"/>
+        <circle cx="35.561" cy="172.367" r="4.05" fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-1.96 35.56 172.367)"/>
+        <circle cx="21.049" cy="168.168" r="2.831" fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-1.718 21.05 168.168)"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M26.69 144.8l2.45-1.03M31.6 155.69l1.11-2.38M42.15 161.52l1.97-2.23M47.38 172.92l2.63.37M38.23 185.92l.55 2.42M23.73 184.06l-1.83 2.55M12.49 170.57l-2.84 1.12M8.66 154.27l-3.11-.05M15.77 139.71l-.56-3.72"/>
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M2.41 164.07a31.54 31.54 0 0 0 1.26 3.62M11.38 132.54a18.8 18.8 0 0 0-7.23 7.54c-2.84 5.17-3.61 11.81-2.91 18"/>
+        <path fill="#F78800" fill-rule="nonzero" d="M161.64 24.28l-36.1-16.39-16.39 36.1z"/>
+        <path stroke="#333" d="M107.07 43l16.39-36.1a2.28 2.28 0 0 1 3-1.13l36.1 16.39a2.28 2.28 0 0 1-.14 4.21l-52.47 19.75a2.28 2.28 0 0 1-2.88-3.12z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M129.18 17.48l14.54 6.6-21.15 7.94z"/>
+        <path stroke="#333" stroke-linejoin="round" d="M123.37 12.66l2.27 1.03M121.38 17.05l2.27 1.04M119.38 21.45l2.27 1.03M117.39 25.85l2.26 1.03M115.39 30.24l2.27 1.03M113.39 34.64l2.27 1.03M129.55 12.28l.97-2.13M133.95 14.27l.96-2.12M138.34 16.27l.97-2.13M142.74 18.27l.97-2.13M147.14 20.26l.96-2.12"/>
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M120 4.3a5.62 5.62 0 0 1 7.49-2.8l22.66 10.3M116.85 11.33l1.31-2.88"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M200.25 187.24h9.17M159.45 187.24h31.79"/>
+        <path fill="#E8D4AC" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M100.45 180.4h17.27v6.83h-17.27zM163.57 180.4h17.27v6.83h-17.27z"/>
+        <path fill="#7C4DFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M117.89 182.66v4.57h45.66v-4.57h20.93v-17.23a27.11 27.11 0 0 0-27.11-27.11h-32.9a27.11 27.11 0 0 0-27.11 27.11v17.23h20.53z"/>
+        <path fill="#DBBC86" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M148.45 137.91v-17.76h-15.42v17.76h-1.6v15.28h18.43v-15.28z"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M140.74 153.55v33.41M148.53 135.6a7.54 7.54 0 0 1 7.17 9.84l-4.41 13.7-7-5.93 4.24-17.61zM133 135.6a7.54 7.54 0 0 0-7.17 9.84l4.41 13.7 7.37-6.12L133 135.6z"/>
+        <path fill="#01D2B9" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M117.96 164.08v23.16M163.53 164.08v23.16"/>
+        <path fill="#9B6948" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M167 95c-2.57-12.514-13.584-21.497-26.36-21.497S116.85 82.486 114.28 95a22.34 22.34 0 0 0-6.58 15.81c0 12.53 10.4 22.69 23.24 22.69a23.61 23.61 0 0 0 9.7-2.07 23.61 23.61 0 0 0 9.7 2.07c12.83 0 23.24-10.16 23.24-22.69A22.34 22.34 0 0 0 167 95z"/>
+        <path fill="#E8D4AC" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M124.42 113.05c.34 3.26-1.63 6.12-4.4 6.38-2.77.26-5.3-2.18-5.64-5.44-.34-3.26 1.63-6.12 4.4-6.38 2.77-.26 5.3 2.18 5.64 5.44zM156.94 113.05c-.34 3.26 1.63 6.12 4.4 6.38 2.77.26 5.3-2.18 5.64-5.44.34-3.26-1.63-6.12-4.4-6.38-2.77-.26-5.3 2.18-5.64 5.44z"/>
+        <path fill="#E8D4AC" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M162.38 103.61c-2.65-1.17-7.39-4.77-9.54-15.75 0 0-2 8-19.31 11.43 0 0 1.65-1.34 2.44-6.7 0 0-8.22 10.27-17.18 11.85-.33 3.9-1.22 25.55 18.95 31 .28.08.58.13.86.22a9.07 9.07 0 0 0 3.69.11l1.1-.27c22.44-5.93 19.12-31.72 19.12-31.72a1.13 1.13 0 0 1-.13-.17z"/>
+        <path fill="#E5E1E1" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M137.65 105.54s-8.63-2.64-16.38-.47c0 0 0 4.85 1.88 7.44a1.65 1.65 0 0 0 1.33.66h9.65a1.61 1.61 0 0 0 1.29-.62c.64-.84 1.58-2.74 2.23-7.01zM143.71 105.54s8.63-2.64 16.38-.47c0 0 0 4.85-1.88 7.44a1.65 1.65 0 0 1-1.33.66h-9.65a1.61 1.61 0 0 1-1.29-.62c-.64-.84-1.58-2.74-2.23-7.01z"/>
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M137.28 107.78a7.58 7.58 0 0 1 6.68-.07M134.84 123.65l.09.06a11 11 0 0 0 11.59-.06M121.17 106.3l-2.39.65M160.13 106.43l2.45.52"/>
+        <circle cx="83.9" cy="182.34" r="8.2" stroke="#333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill="#F78800" fill-rule="nonzero" stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M65.95 171.89h17.1v24.31h-17.1z"/>
+        <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M72.23 144.31s-5.35 3.52-.36 10.82c4.99 7.3-1.09 12.15-1.09 12.15M79.52 144.31s-5.35 3.52-.36 10.82c4.99 7.3-1.09 12.15-1.09 12.15M66.09 175.82h16.52M258.05 104.6a122.33 122.33 0 0 1 5.08 23.69M19.69 121.31a122.11 122.11 0 0 1 10.26-32.18M34.76 193.87c1.51 2.78 4 6.6 6.28 10"/>
+    </g>
+</svg>
