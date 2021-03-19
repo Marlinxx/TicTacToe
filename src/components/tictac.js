@@ -82,7 +82,7 @@ class TicTacToe extends Component {
     }
 
     onIncomingMessage = (index) => {
-        const { isWin, boxes, nextSymbol } = this.state;
+        const { boxes, nextSymbol } = this.state;
         let boxArray = [...boxes];
         if(boxArray[index])
             return;
@@ -154,6 +154,7 @@ sendMessage = (data) => {
             {
                 isLoggedIn &&
                 <Fragment>
+                    {!isWin ? <span className='smallText'> {this.canPlay ? 'Make your move' : 'Waiting for opponent\'s move'} </span> : null}
                      <div className='board'>
                 {boxes.map((box, index) => 
                     <Box value={box} onClickHandler={() => this.onClickHandler(index)} key={index} winnerBlockcss={isWin && this.isWinningBlock(index)? 'winnerBlock': ''}></Box>
