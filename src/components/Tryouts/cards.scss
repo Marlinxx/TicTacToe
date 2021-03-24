@@ -1,0 +1,39 @@
+.singleCard {
+    // width: 100px;
+    height: 100px;
+    display: flex;
+    border: 1px solid red;
+    box-sizing: border-box;
+    align-items: flex-end;
+    justify-content: center;
+
+    .cardTitle {
+        font-size: 12px;
+    }
+}
+
+.column3 {
+    width: calc(100%/3);
+}
+.column4 {
+    width: calc(100%/4);
+}
+.column5 {
+    width: calc(100%/5);
+}
+
+.container {
+    display: flex;
+    .cardsContainer {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid greenyellow;
+    }
+
+    .imageSlider {
+        transform: rotate(90deg);
+    }
+
+}
+

@@ -1,11 +1,13 @@
 import './App.css';
-import TicTacToe from './components/tictac';
+// import TicTacToe from './components/tictac';
+import DynamicCard from './components/Tryouts/dynamicCard';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <TicTacToe />
+       {/* <TicTacToe /> */}
+       <DynamicCard />
       </header>
     </div>
   );
