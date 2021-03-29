@@ -1,0 +1,31 @@
+.localstreamContainer {
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    position: relative;
+}
+.controlsOverlay {
+    position: absolute;
+    z-index: 1000;
+}
+
+.leftSection {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.activeButton {
+    background-color: blue;
+    color: white;
+}
+
+.disabledButton {
+    background-color: red;
+    color: white;
+}

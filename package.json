@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^12.4.0",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
+    "agora-rtc-sdk-ng": "^4.3.0",
     "agora-rtm-sdk": "^1.4.1-201",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.0",
