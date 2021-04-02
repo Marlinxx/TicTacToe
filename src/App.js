@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       {/* <TicTacToe /> */}
-       {/* <DynamicCard /> */}
-       {/* <AgoraRTCIntegration /> */}
-       <SessionJoin />
+        {/* <TicTacToe /> */}
+        {/* <DynamicCard /> */}
+        {/* <AgoraRTCIntegration /> */}
+        <SessionJoin />
       </header>
     </div>
   );

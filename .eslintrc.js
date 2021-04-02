@@ -4,17 +4,17 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   env: {
     browser: true,
-    jest: true,
+    jest: true
   },
   globals: {
-    window: true,
+    window: true
   },
-  extends: ['airbnb', 'prettier'],
+  extends: ['airbnb'],
   rules: {
     // Need to be enabled later
     'no-console': 'off',
@@ -27,8 +27,8 @@ module.exports = {
       'error',
       {
         array: false,
-        object: true,
-      },
+        object: true
+      }
     ],
     'import/prefer-default-export': 'off',
     'react/jsx-fragments': 'off',
@@ -99,8 +99,8 @@ module.exports = {
       'error',
       {
         words: true,
-        nonwords: false,
-      },
+        nonwords: false
+      }
     ],
     'func-call-spacing': ['error', 'never'],
     'eol-last': ['error', 'always'],
@@ -117,9 +117,10 @@ module.exports = {
       {
         anonymous: 'always',
         named: 'never',
-        asyncArrow: 'always',
-      },
+        asyncArrow: 'always'
+      }
     ],
+    'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', { before: false, after: true }],
     'space-before-blocks': 'error',
     'space-in-parens': ['error', 'never'],
@@ -130,20 +131,20 @@ module.exports = {
     'lines-between-class-members': [
       'error',
       'always',
-      { exceptAfterSingleLine: true },
-    ],
+      { exceptAfterSingleLine: true }
+    ]
   },
   overrides: [
     // node files
     {
       files: ['.eslintrc.js', 'scripts/**/*.js', 'config/**/*.js'],
       parserOptions: {
-        sourceType: 'script',
+        sourceType: 'script'
       },
       env: {
         browser: false,
-        node: true,
-      },
-    },
-  ],
+        node: true
+      }
+    }
+  ]
 };
