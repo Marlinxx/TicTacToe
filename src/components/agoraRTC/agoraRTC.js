@@ -7,7 +7,7 @@ import './agoraRTC.scss';
 const token = '0064a051e53c6ee48429044a9ace1a64d22IABDqSvPjufBL+1kt40ww6EkqHDOr7MiCVCof6k+rVw9NI4kO3kAAAAAEAC5X9YGOC9kYAEAAQA3L2Rg'
 const app_id = '4a051e53c6ee48429044a9ace1a64d22'
 const RTM_app_id = 'dd1bdd5406a642fea84499861dcef2e3'
-const randomUserName = `user${Math.round(Math.random()*10)}`;
+const randomUserName = `user${Math.round(Math.random() * 10)}`;
 class AgoraRTCIntegration extends Component {
 
     constructor(props) {
@@ -38,12 +38,12 @@ class AgoraRTCIntegration extends Component {
         this.RTMChannel = this.RTMClient.createChannel('demo_channel_name');
         this.RTMChannel2 = this.RTMClient.createChannel('demo_channel_name2');
         this.RTMClient.on('ConnectionStateChanged', (newState, reason) => {
-            console.warn('on connection state changed to ' + newState + ' reason: ' + reason);
+            console.warn(`on connection state changed to ${ newState } reason: ${ reason}`);
           });
     }
 
     joinRTMChannel() {
-        this.RTMClient.login({ token: null, uid: randomUserName}).then(() => {
+        this.RTMClient.login({ token: null, uid: randomUserName }).then(() => {
             console.warn('AgoraRTM client login success');
             this.RTMChannel.join().then(() => {
                 console.warn(`AgoraRTM channel -demo_channel_name- join success with ${randomUserName}`);
@@ -81,18 +81,18 @@ class AgoraRTCIntegration extends Component {
 
         AgoraRTC.getDevices()
         .then(async devices => {
-          const audioDevices = devices.filter(function(device){
+          const audioDevices = devices.filter(function (device) {
               return device.kind === "audioinput";
           });
-          const videoDevices = devices.filter(function(device){
+          const videoDevices = devices.filter(function (device) {
               return device.kind === "videoinput";
           });
         //   console.clear();
         //   console.warn('audio devices', audioDevices);
         //   console.warn('video devices', videoDevices);
 
-          var selectedMicrophoneId = audioDevices[0].deviceId;
-          var selectedCameraId = videoDevices[0].deviceId;
+          let selectedMicrophoneId = audioDevices[0].deviceId;
+          let selectedCameraId = videoDevices[0].deviceId;
           this.createAVTracks(selectedMicrophoneId, selectedCameraId);
         })
 
@@ -104,14 +104,14 @@ class AgoraRTCIntegration extends Component {
         this.client.on("user-published", async (user, mediaType) => {
             // Initiate the subscription
             await this.client.subscribe(user, mediaType);
-          
+
             // If the subscribed track is an audio track
             if (mediaType === "audio") {
-              const audioTrack = user.audioTrack;
+              const { audioTrack } = user;
               // Play the audio
               audioTrack.play();
             } else {
-              const videoTrack = user.videoTrack;
+              const { videoTrack } = user;
               // Play the video
               videoTrack.play("remoteStreamContainer", {
                   mirror: true
@@ -138,8 +138,7 @@ class AgoraRTCIntegration extends Component {
                     volumeLevel: level
                 });
               }, 100);
-        } 
-        catch(err) {
+        } catch(err) {
             if(err.code === 'PERMISSION_DENIED') {
                 this.setState({
                     message: 'Please allow camera and microphone access in the address bar'
@@ -157,14 +156,14 @@ class AgoraRTCIntegration extends Component {
         })
     }
 
-    videoClickHandler () {
+    videoClickHandler() {
         this.videoTrack.setEnabled(!this.state.isVideoEnabled).then(res => {
             this.setState((currentState) => ({
                 isVideoEnabled: !currentState.isVideoEnabled
             })
             );
         });
-        
+
     }
 
     publishLocalTracks() {
@@ -175,14 +174,14 @@ class AgoraRTCIntegration extends Component {
 
     muteClickHandler(track) {
         const msg = JSON.stringify({
-            type:"remoteMute",
-            track: track
+            type: "remoteMute",
+            track
         })
         this.RTMChannel.sendMessage({
             text: msg
-        }).then(res => 
+        }).then(res =>
             console.warn('message sent successfully', msg)
-        ).catch(err => 
+        ).catch(err =>
             console.warn(err)
         )
     }
@@ -190,7 +189,7 @@ class AgoraRTCIntegration extends Component {
     onIncomingMessage(text) {
         const msg = JSON.parse(text);
         console.log(msg)
-        if(msg.track === 'audio'){
+        if(msg.track === 'audio') {
             this.state.isAudioEnabled && this.audioClickHandler();
             this.setState((currentState) => ({
                 isTutorAudioControlEnabled: !currentState.isTutorAudioControlEnabled
@@ -213,20 +212,20 @@ class AgoraRTCIntegration extends Component {
     }
 
     render() {
-        const {volumeLevel, message, networkQuality, isAudioEnabled, isVideoEnabled, isTutorAudioControlEnabled, isTutorVideoControlEnabled} = this.state;
+        const { volumeLevel, message, networkQuality, isAudioEnabled, isVideoEnabled, isTutorAudioControlEnabled, isTutorVideoControlEnabled } = this.state;
         return(
             <div className='container'>
                 <div className='leftSection'>
                     <div className='localstreamContainer' id='localstreamContainer' >
                         <div className='controlsOverlay'>
-                            <button 
-                            className={`${isAudioEnabled ? 'activeButton' : 'disabledButton'} ${!isTutorAudioControlEnabled? 'inactiveButton': null}`} 
+                            <button type='button'
+                            className={`${isAudioEnabled ? 'activeButton' : 'disabledButton'} ${!isTutorAudioControlEnabled ? 'inactiveButton' : null}`}
                             onClick={() => this.audioClickHandler()}
                             disabled={!isTutorAudioControlEnabled}>
                                 Audio
                             </button>
-                            <button 
-                            className={`${isVideoEnabled ? 'activeButton' : 'disabledButton'} ${!isTutorVideoControlEnabled? 'inactiveButton': null}`} 
+                            <button type='button'
+                            className={`${isVideoEnabled ? 'activeButton' : 'disabledButton'} ${!isTutorVideoControlEnabled ? 'inactiveButton' : null}`}
                             onClick={() => this.videoClickHandler()}
                             disabled={!isTutorVideoControlEnabled}>
                                 Video
@@ -235,7 +234,7 @@ class AgoraRTCIntegration extends Component {
                     </div>
                     <div>
                         <span>Audio volume:</span>
-                        <input type='range' min='0' max='1' value={volumeLevel} step="0.01" readOnly /> 
+                        <input type='range' min='0' max='1' value={volumeLevel} step="0.01" readOnly />
                     </div>
                     { message &&
                         <div>
@@ -243,22 +242,21 @@ class AgoraRTCIntegration extends Component {
                         </div>
                     }
                     <span>Your network quality is {networkQuality}</span>
-                    <button className={'activeButton'} onClick={() => this.publishLocalTracks()}>Publish</button>
+                    <button type='button' className="activeButton" onClick={() => this.publishLocalTracks()}>Publish</button>
 
                     <div>
-                        <button onClick={() => this.joinRTMChannel()}>Join RTM channel</button>
-                        <button onClick={() => this.getMembers()}>Get members</button>
+                        <button type='button' onClick={() => this.joinRTMChannel()}>Join RTM channel</button>
+                        <button type='button' onClick={() => this.getMembers()}>Get members</button>
                     </div>
 
                     <div>
-                        <button onClick={() => this.muteClickHandler('audio')}>Mute all audio</button>
-                        <button onClick={() => this.muteClickHandler('video')}>Mute all video</button>
+                        <button type='button' onClick={() => this.muteClickHandler('audio')}>Mute all audio</button>
+                        <button type='button' onClick={() => this.muteClickHandler('video')}>Mute all video</button>
                     </div>
                 </div>
 
                 <div className='leftSection'>
-                    <div className='localstreamContainer' id='remoteStreamContainer' >
-                    </div>
+                    <div className='localstreamContainer' id='remoteStreamContainer' />
                 </div>
             </div>
         )
