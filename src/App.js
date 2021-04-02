@@ -1,5 +1,6 @@
 import './App.css';
-import AgoraRTCIntegration from './components/agoraRTC/agoraRTC';
+// import AgoraRTCIntegration from './components/agoraRTC/agoraRTC';
+import SessionJoin from './components/sessionJoin/sessionJoin';
 // import TicTacToe from './components/tictac';
 // import DynamicCard from './components/Tryouts/dynamicCard';
 
@@ -9,7 +10,8 @@ function App() {
       <header className="App-header">
        {/* <TicTacToe /> */}
        {/* <DynamicCard /> */}
-       <AgoraRTCIntegration />
+       {/* <AgoraRTCIntegration /> */}
+       <SessionJoin />
       </header>
     </div>
   );

@@ -4,7 +4,7 @@ import AgoraRTM from 'agora-rtm-sdk';
 
 import './agoraRTC.scss';
 
-const token = '0064a051e53c6ee48429044a9ace1a64d22IAAyRLGZV7ZSYqnTdnFxAJHj25Xsh76ofle2ESArUCLhdI4kO3kAAAAAEAC5X9YGrNpiYAEAAQCr2mJg'
+const token = '0064a051e53c6ee48429044a9ace1a64d22IABDqSvPjufBL+1kt40ww6EkqHDOr7MiCVCof6k+rVw9NI4kO3kAAAAAEAC5X9YGOC9kYAEAAQA3L2Rg'
 const app_id = '4a051e53c6ee48429044a9ace1a64d22'
 const RTM_app_id = 'dd1bdd5406a642fea84499861dcef2e3'
 const randomUserName = `user${Math.round(Math.random()*10)}`;
@@ -40,7 +40,9 @@ class AgoraRTCIntegration extends Component {
         this.RTMClient.on('ConnectionStateChanged', (newState, reason) => {
             console.warn('on connection state changed to ' + newState + ' reason: ' + reason);
           });
+    }
 
+    joinRTMChannel() {
         this.RTMClient.login({ token: null, uid: randomUserName}).then(() => {
             console.warn('AgoraRTM client login success');
             this.RTMChannel.join().then(() => {
@@ -201,6 +203,15 @@ class AgoraRTCIntegration extends Component {
         }
     }
 
+    getMembers() {
+        // this.RTMClient.getChannelMemberCount(['demo_channel_name']).then(res => {
+        //     console.log(res)
+        // })
+        this.RTMChannel.getMembers().then(res => {
+            alert(res)
+        })
+    }
+
     render() {
         const {volumeLevel, message, networkQuality, isAudioEnabled, isVideoEnabled, isTutorAudioControlEnabled, isTutorVideoControlEnabled} = this.state;
         return(
@@ -233,6 +244,12 @@ class AgoraRTCIntegration extends Component {
                     }
                     <span>Your network quality is {networkQuality}</span>
                     <button className={'activeButton'} onClick={() => this.publishLocalTracks()}>Publish</button>
+
+                    <div>
+                        <button onClick={() => this.joinRTMChannel()}>Join RTM channel</button>
+                        <button onClick={() => this.getMembers()}>Get members</button>
+                    </div>
+
                     <div>
                         <button onClick={() => this.muteClickHandler('audio')}>Mute all audio</button>
                         <button onClick={() => this.muteClickHandler('video')}>Mute all video</button>
