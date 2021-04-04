@@ -14,6 +14,9 @@ export default function StudentAvatar({ student }) {
                 student.hasDp ? <img src={image.default} alt="logo" className="studentDp" /> : <div className="student">{student.avatarLetter}</div>
             }
       </div>
+      {/* <div>
+        This is something added for test commit purpose
+      </div> */}
       {/* <svg xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="50" fill="red" />
             {
