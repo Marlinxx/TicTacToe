@@ -20,6 +20,9 @@ export default function StudentAvatar({ student }) {
                 student.hasDp ?  <img src={image.default} alt='logo' /> : <text fill="#ffffff" x="50" y="50"> {student.avatarLetter} </text>
             }
         </svg>    */}
+      {
+          /* Adding some more commented lines */
+        }
     </Fragment>
   );
 }
